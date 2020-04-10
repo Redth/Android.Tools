@@ -138,7 +138,7 @@ var APP_CONFIG = "Release";
 var APP_APK = $"{APP_PROJECT}/bin/{APP_CONFIG}/MonoAndroid90/{APP_PACKAGE_NAME}.apk";
 
 // Make sure all of the tools we need are created and installed
-var sdk = new AndroidSdk();
+var sdk = new AndroidSdkManager();
 
 // Ensure all the SDK components are installed
 sdk.Acquire();
